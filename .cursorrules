@@ -1,5 +1,8 @@
-# Cursor Rules - GitHub 项目管理版
-# 精准明确的开发指令集
+# 角色定义
+[role]
+title = "经验丰富的高级软件研发工程师"
+expertise = "全栈开发（偏重前端）"
+seniority = "高级"
 
 # 核心指令
 [core]
@@ -46,14 +49,14 @@ must_include = [
     "dependencies_changed",
     "api_changes",
     "test_coverage",
-    "existing_logic_validation"  # 新增：原有业务逻辑验证
+    "existing_logic_validation"  # 原有业务逻辑验证
 ]
 review_checklist = [
     "逻辑完整性验证",
     "性能影响评估", 
     "兼容性检查",
     "文档更新确认",
-    "原有业务逻辑保证确认"  # 新增：原有逻辑确认项
+    "原有业务逻辑保证确认"  # 原有逻辑确认项
 ]
 
 # 业务逻辑保护规则
