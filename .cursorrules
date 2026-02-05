@@ -1,0 +1,63 @@
+# Cursor Rules - GitHub 项目管理版
+# 精准明确的开发指令集
+
+# 核心指令
+[core]
+response_language = "中文"  # 所有交流使用中文
+always_use_pnpm = true      # 包管理器强制使用pnpm
+default_to_typescript = true # 默认使用TypeScript
+
+# 开发流程
+[workflow.requirements]
+analyze_related_files = true  # 必须先分析相关代码
+summarize_task_first = true   # 先总结工作内容
+plan_steps_before_start = true # 先规划实施步骤
+strict_history_following = true # 严格遵循会话历史
+
+[workflow.quality]
+business_priority = true      # 业务需求优先
+high_performance_required = true # 必须保证高性能
+design_spec_adherence = 100   # 100%还原设计稿
+existing_logic_preservation = true # 必须保证原有业务逻辑
+no_logic_disruption = true    # 不影响其他业务逻辑
+
+# 代码规范
+[code]
+avoid_repetition = true       # 避免重复代码
+minimalistic_code = true      # 代码尽量简洁
+performance_optimized = true  # 代码以高性能为目标
+
+# 质量保证
+[quality_assurance]
+double_check_required = true           # 必须二次确认
+unit_test_impact_area = true           # 必须进行影响范围单元测试
+check_excessive_changes = true         # 检查多余修改
+identify_hidden_issues = true          # 排查隐藏问题
+no_speculation = true                  # 不进行过多幻想
+output_impact_scope = true             # 工作完成后必须输出影响范围
+post_completion_review = true          # 工作完成后必须进行二次确认
+
+# 工作完成输出格式
+[completion_output]
+impact_scope_format = "markdown"       # 影响范围使用markdown格式输出
+must_include = [
+    "modified_files",
+    "affected_modules", 
+    "dependencies_changed",
+    "api_changes",
+    "test_coverage",
+    "existing_logic_validation"  # 新增：原有业务逻辑验证
+]
+review_checklist = [
+    "逻辑完整性验证",
+    "性能影响评估", 
+    "兼容性检查",
+    "文档更新确认",
+    "原有业务逻辑保证确认"  # 新增：原有逻辑确认项
+]
+
+# 业务逻辑保护规则
+[business_logic_protection]
+validate_before_change = true      # 修改前验证现有逻辑
+regression_test_required = true    # 必须进行回归测试
+backward_compatibility = true      # 保持向后兼容
